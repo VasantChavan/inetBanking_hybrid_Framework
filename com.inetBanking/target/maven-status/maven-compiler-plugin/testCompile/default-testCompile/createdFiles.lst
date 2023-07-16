@@ -1,0 +1,5 @@
+com\inetBanking\pageobject\LoginPage.class
+com\inetBanking\testcases\LoginTC_002.class
+com\inetBanking\testbase\TestBase.class
+com\inetBanking\testcases\LoginTC_001.class
+com\inetBanking\utility\ConfigDataProvider.class
