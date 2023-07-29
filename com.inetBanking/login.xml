@@ -5,9 +5,8 @@
 	<parameter name="browsername" value="firefox" />
 
 	<test name="Login Test">
-
 		<classes>
-			<class name="com.inetBanking.testcases.LoginTC_001" />
+			<class name="com.inetBanking.testcases.LoginTC_002" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -6,6 +6,7 @@
       <class name="com.inetBanking.testcases.HomeTC_001">
         <methods>
           <include name="teardown"/>
+          <include name="extentFlush"/>
           <include name="setup"/>
           <include name="verifyLogoutFunctionality"/>
           <include name="init"/>

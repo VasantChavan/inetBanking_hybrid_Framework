@@ -14,20 +14,25 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Helper {
 
-	public static void captureScreenshot(WebDriver driver) {
+	public static String captureScreenshot(WebDriver driver) {
+		
+		String screenshotPath = System.getProperty("user.dir")+"/Screenshots/inetBanking_/" + getCurrentDateTime() + ".png";
 		try {
 //			TakesScreenshot ts = (TakesScreenshot) driver;
 //			File scr = ts.getScreenshotAs(OutputType.FILE);
 //			File target = new File("./Screenshots/inetBanking_" + getCurrentDateTime() + ".png");
 //			FileHandler.copy(scr, target);
 
+			
 			FileHandler.copy(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE),
-					new File("./Screenshots/inetBanking_" + getCurrentDateTime() + ".png"));
+					new File(screenshotPath));
 
 			System.out.println("Captured screenshot Successfully!!!");
 		} catch (Exception e) {
 			System.out.println("Exception raised in try block :- " + e);
 		}
+		
+		return screenshotPath;
 
 	}
 
